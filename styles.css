@@ -39,7 +39,6 @@ body {
   display: block;
   width: min(82vw, 760px);
   max-height: 54vh;
-  filter: saturate(1.12) brightness(1.08) contrast(1.04);
   mix-blend-mode: hard-light;
   object-fit: contain;
   user-select: none;
@@ -59,15 +58,6 @@ body {
   text-transform: uppercase;
 }
 
-.loading-text::after {
-  display: inline-block;
-  width: 1.25em;
-  overflow: hidden;
-  vertical-align: bottom;
-  animation: dots 1.4s steps(4, end) infinite;
-  content: "...";
-}
-
 .spinner {
   width: 1.45rem;
   height: 1.45rem;
@@ -81,16 +71,6 @@ body {
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes dots {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 1.25em;
   }
 }
 
